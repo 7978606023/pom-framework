@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="classes">
+<listeners>
+<listener class-name="com.ip.reports.Listeners"/>
+<listener class-name="com.ip.reports.ExtentReporterNG"/>
+
+</listeners>
+  <test thread-count="5" name="Validating user login Test" parallel="classes">
+    <classes>
+      <class name="com.ip.pages.HomePageTest"/>
+       </classes>
+      </test>
+      <test thread-count="5" name="Validating App Test" parallel="classes">
+         
+  </test> <!-- Test -->
+      <test thread-count="5" name="Validating validate Text" parallel="classes">
+    <classes>
+      <class name="com.ip.reports.ValidateText"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
